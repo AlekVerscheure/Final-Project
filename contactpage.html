@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Contact Me Page</title>
+    <link rel="stylesheet" href="style.css">   <!--Links the style sheet to this page-->
+   
+</head>
+<body>
+  
+  <br> <!--Makes the text below in the H4 not right on the top of the page--> 
+  
+  
+ <u> <h4 class = "contact">If you have any questions, feel free to send a form with your contact info and I will get back to you soon!</h4>  </u> <br><br>
+  
+  
+  
+ <!--Code to make a contact me form--> 
+
+   <form action = "https://api.sheetmonkey.io/form/8M2Y1VwvGS5NpETCdKNtpn" method = "POST">
+  
+   <lable>Email Address:</lable>
+           <input type "text" id = "email" name= "Email"><br><br>
+
+
+<lable>Phone Number (Ex: 555-555-5555)</lable>
+           <input type "text" id = "phone" name= "Phone#"><br><br>
+
+
+ <label for="submission">Date of Form Submission:</label>
+  <input type="date" id="date" name="Date-Submitted"> <br>
+   
+   <br><br>
+
+
+
+
+<label for="Rating">Did you like this Resume?</label>
+  <select id="Rating" name="Rating">
+    <option value="Yes!">Yes!</option>
+    <option value="No!">No!</option>
+    <option value="Meh">Meh</option>
+   <br>
+  </select> <br><br>
+
+<input type="submit" value="Submit">  
+
+ </form>
+<br>
+
+<!--Text that changed the font color to red upon clicking the button changing the appearance of the page--> 
+
+ 
+
+<h4 id = "p">Before you submit, try changing text color of this by clicking the button below!</h4>  <br><br> 
+
+<button onclick = "turnRed()">Click Me to change color!</button> 
+
+<!--Javascript that turns the text color to red after clicking the button--> 
+
+<script>
+
+    function turnRed()
+        	{
+        		var p = document.getElementById("p");
+        		p.style.color = "red";
+        	}
+
+
+</script>
+
+  
+    <br>   <!--a bunch of BRs to add appeal to the page--> 
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<!--Buttons linking all webpages together-->  
+
+    <a href= "index.html">
+        <button class="glow-on-hover">
+            Home Page
+        </button>
+    </a>    
+    
+
+    <a href= "aboutme.html">
+        <button class="glow-on-hover">
+            About Me Page
+        </button>
+    </a>   
+    
+
+    <a href= "myhockey.html">
+        <button class="glow-on-hover">
+            Hockey Page
+        </button>
+    </a>
+
+
+
+  <a href= "scubapage.html">
+        <button class="glow-on-hover">
+        Scuba Page
+        </button>
+    </a>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+   
+</body>
+</html>
